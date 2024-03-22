@@ -1,0 +1,19 @@
+{
+    "name": "jess/eloquent-wp",
+    "require": {
+        "illuminate/database": "^11.0"
+    },
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jess\\EloquentWp\\": "src/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
