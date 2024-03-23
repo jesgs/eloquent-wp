@@ -25,12 +25,16 @@
 	<!-- Rules: WordPress Coding Standards -->
 	<!-- https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards -->
 	<!-- https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/wiki/Customizable-sniff-properties -->
+
 	<config name="minimum_supported_wp_version" value="6.4"/>
-	<rule ref="WordPress"/>
+	<rule ref="WordPress" />
+	<rule ref="WordPress-Core">
+		<exclude name="Universal.Arrays.DisallowShortArraySyntax"/>
+	</rule>
 	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
 		<properties>
 			<!-- Value: replace the function, class, and variable prefixes used. Separate multiple prefixes with a comma. -->
-			<property name="prefixes" type="array" value="eloquent-wp, ELOQUENT_WP, eloquent_wp_"/>
+			<property name="prefixes" type="array" value="eloquent-wp, ELOQUENT_WP, EloquentWP_, eloquent_wp_, JesGs"/>
 		</properties>
 	</rule>
 	<rule ref="WordPress.WP.I18n">

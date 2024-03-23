@@ -29,5 +29,3 @@ if ( ! defined( 'ELOQUENT_WP_ABSPATH' ) ) {
 if ( ! defined( 'ELOQUENT_WP_URLPATH' ) ) {
 	define( 'ELOQUENT_WP_URLPATH', plugin_dir_url( __FILE__ ) );
 }
-
-require ELOQUENT_WP_ABSPATH . 'vendor/autoload.php';
