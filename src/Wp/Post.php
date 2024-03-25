@@ -1,6 +1,6 @@
 <?php
 
-namespace JesGs\EloquentWp;
+namespace JesGs\EloquentWp\Wp;
 
 use Illuminate\Database\Eloquent\Model as Eloquent;
 
